@@ -1,0 +1,3 @@
+# Assembly Memory Access Error
+
+This repository demonstrates a common error in assembly language programming: accessing memory at an invalid address. The specific example uses the instruction `mov eax, [ebx + ecx*4]`, which calculates a memory address based on the values of `ebx` and `ecx`. If this calculation results in an address outside the program's allocated memory space, it leads to a runtime error (segmentation fault).  The solution provides safer memory access using bounds checking.
